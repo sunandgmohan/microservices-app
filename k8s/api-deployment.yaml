@@ -25,7 +25,6 @@ metadata:
   name: api-gateway
   namespace: ns-microservice
 spec:
-  type: NodePort
   selector:
     app: api-gateway
   ports:
