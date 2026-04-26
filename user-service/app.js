@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/users', (req, res) => {
-    res.json([{ id: 1, name: "Sunand" }]);
+app.get('/', (req, res) => {
+    res.send("USER SERVICE RUNNING");
 });
 
 app.listen(3000, () => console.log("User Service running"));
